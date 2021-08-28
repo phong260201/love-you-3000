@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+span {
+    position: absolute;
+    background: url("heart.png");
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    animation: animati 2s linear infinite;
+    background-size: cover;
+}
+
+@keyframes animati {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -1000%);
+        opacity: 0;
+        filter: hue-rotate(760deg);
+    }
+}
